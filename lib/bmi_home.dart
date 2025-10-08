@@ -20,6 +20,17 @@ class _BmiHomeState extends State<BmiHome> {
   double bmi = 0.0;
   Color color = Colors.green;
 
+  // Calculates BMI using the metric formula: weight / (height²)
+  void _updateBmi() {
+    bmi = weightValue / (heightValue * heightValue);
+  }
+
+  @override
+  void initState() {
+    _updateBmi(); // Initial BMI calculation on widget load
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,9 +49,12 @@ class _BmiHomeState extends State<BmiHome> {
             sliderMax: 2.2,
             sliderMin: 1.2,
             onChange: (newValue) {
-              setState(() => heightValue = newValue);
+              setState(() {
+                heightValue = newValue;
+              });
+              _updateBmi(); // Recalculate BMI after height change
             },
-          ),
+          ), // BmiSlider
           const SizedBox(height: 5),
           BmiSlider(
             label: 'Weight',
@@ -50,9 +64,12 @@ class _BmiHomeState extends State<BmiHome> {
             sliderMax: 130.0,
             sliderMin: 30.0,
             onChange: (newValue) {
-              setState(() => weightValue = newValue);
+              setState(() {
+                weightValue = newValue;
+              });
+              _updateBmi(); // Recalculate BMI after weight change
             },
-          ),
+          ), // BmiSlider
         ],
       ),
     );
