@@ -4,6 +4,12 @@ import 'package:flutter/material.dart';
 const backgroundColor = Colors.lightBlue;
 const txtLabelStyle = TextStyle(color: Colors.white70, fontSize: 22);
 const txtValueStyle = TextStyle(color: Colors.white, fontSize: 40);
+const txtResultStyle = TextStyle(
+  letterSpacing: 1.2,
+  fontSize: 25,
+  fontWeight: FontWeight.bold,
+  color: Colors.white,
+);
 
 /// Enum for supported BMI units.
 enum BmiUnit { m, ft, kg, lb }

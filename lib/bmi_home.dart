@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:bmi_calculator/constants.dart';
+import 'package:bmi_calculator/widgets/bmi_result.dart';
 import 'package:bmi_calculator/widgets/bmi_slider.dart';
 
 /// Main screen of the BMI Calculator (Stateful version).
@@ -24,8 +26,10 @@ class _BmiHomeState extends State<BmiHome> {
       backgroundColor: backgroundColor,
       appBar: AppBar(title: const Text('BMI Calculator')),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          BmiResult(bmi: bmi, status: status, color: color),
+          const SizedBox(height: 125),
           BmiSlider(
             label: 'Height',
             unit: BmiUnit.m,
@@ -49,7 +53,6 @@ class _BmiHomeState extends State<BmiHome> {
               setState(() => weightValue = newValue);
             },
           ),
-          const SizedBox(height: 75),
         ],
       ),
     );
