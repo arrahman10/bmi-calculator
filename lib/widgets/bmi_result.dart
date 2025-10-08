@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 import 'package:bmi_calculator/constants.dart';
 
@@ -39,7 +40,14 @@ class BmiResult extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 8.0),
-          child: Text(status, style: txtResultStyle),
+          child: AutoSizeText(
+            status,
+            style: txtResultStyle,
+            maxLines: 1,
+            minFontSize: 20,
+            textAlign: TextAlign.center,
+            overflow: TextOverflow.ellipsis,
+          ),
         ),
       ],
     );
