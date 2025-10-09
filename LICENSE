@@ -1,0 +1,57 @@
+# Personal and Educational Use License
+Version 1.1 — October 2025
+
+Copyright (c) 2025 Abdur Rahman
+All rights reserved.
+
+---
+
+## 1. Permission Grant
+
+Permission is hereby granted to any individual to download, view, and use this project’s source code **for personal learning, academic coursework, or educational demonstrations only**, subject to the following conditions:
+
+- The software may **not** be used for commercial, business, or revenue-generating purposes.
+- The software may **not** be redistributed, modified, or republished in any form without proper attribution and explicit written permission from the copyright holder.
+- The author’s name and original repository link must remain visible in any derivative academic work or presentation.
+
+---
+
+## 2. Restrictions
+
+You may **not**:
+- Sell, rent, sublicense, or otherwise profit from this codebase or its compiled form.
+- Claim authorship or misrepresent the origin of this work.
+- Remove or alter copyright notices, license terms, or author attribution.
+- Use this project in any AI dataset, machine learning model, or automated content generator without prior written consent.
+
+---
+
+## 3. Attribution Requirement
+
+If you use any part of this project’s code or assets for academic, open-source, or non-commercial learning purposes, you must include the following credit notice in your documentation or README:
+
+```
+Based on the original BMI Calculator project by Abdur Rahman
+GitHub: https://github.com/arrahman10/bmi-calculator
+Licensed under the Personal and Educational Use License (Version 1.1 — October 2025)
+```
+
+---
+
+## 4. Disclaimer of Warranty
+
+This software is provided **“as is,” without warranty of any kind**, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.
+In no event shall the author or copyright holder be liable for any claim, damages, or other liability arising from the use or inability to use this software.
+
+---
+
+## 5. Contact
+
+For permissions beyond this license, please contact:
+**Abdur Rahman**
+GitHub: [@arrahman10](https://github.com/arrahman10)
+Email: arrahman.lus@gmail.com
+
+---
+
+> This license applies exclusively to this repository and other projects explicitly marked under the same “Personal and Educational Use License.”
