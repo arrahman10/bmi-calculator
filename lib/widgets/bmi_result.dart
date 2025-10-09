@@ -27,8 +27,8 @@ class BmiResult extends StatelessWidget {
         AnimatedContainer(
           duration: const Duration(milliseconds: 500),
           alignment: Alignment.center,
-          width: 160,
-          height: 160,
+          width: 215,
+          height: 215,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             border: Border.all(color: color, width: 10),
@@ -38,15 +38,18 @@ class BmiResult extends StatelessWidget {
             style: txtValueStyle.copyWith(fontSize: 60),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8.0),
-          child: AutoSizeText(
-            status,
-            style: txtResultStyle,
-            maxLines: 1,
-            minFontSize: 20,
-            textAlign: TextAlign.center,
-            overflow: TextOverflow.ellipsis,
+        SizedBox(
+          height: 60,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
+            child: AutoSizeText(
+              status,
+              style: txtResultStyle,
+              maxLines: 1,
+              minFontSize: 20,
+              textAlign: TextAlign.center,
+              overflow: TextOverflow.ellipsis,
+            ),
           ),
         ),
       ],

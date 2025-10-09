@@ -25,7 +25,7 @@ class BmiHome extends StatelessWidget {
               color: provider.color,
             ),
           ),
-          const SizedBox(height: 100),
+          const SizedBox(height: 75),
           Consumer<BmiProvider>(
             builder: (context, provider, child) => BmiSlider(
               label: 'Height',
