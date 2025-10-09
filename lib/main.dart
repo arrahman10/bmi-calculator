@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'package:bmi_calculator/bmi_home.dart';
+import 'package:bmi_calculator/provider/bmi_provider.dart';
 
+/// Entry point of the BMI Calculator app (Provider version).
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => BmiProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
-/// Root widget of the BMI Calculator app.
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
